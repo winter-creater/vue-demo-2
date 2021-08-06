@@ -7,7 +7,6 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
@@ -15,18 +14,11 @@ export default {
    return{
      n:0
    }
- },
- methods:{
-   add(){
-     this.n+=1
-   },
-   jian(){
-     this.n-=1
-   }
- },
+ }
 }
-</script>
+ </script>
 
+<script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.9/vue.min.js"></script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

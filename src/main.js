@@ -1,12 +1,21 @@
+const Vue = window.Vue
 
-import Vue from 'vue'
-import Demo from './Demo.vue'
-
+Vue.config.productionTip = false
 
 new Vue({
-    // el: '#app',
-    render(h) {
-        return h(Demo)
+    data: {
+        n: 0
+    },
+    template: `
+    <div class="red">
+    {{n}}
+    <button @click="add">+1</button>
+</div>
+    `,
+    methods: {
+        add() {
+            this.n += 1
+        }
     }
 }).$mount('#app')
 
