@@ -3,8 +3,16 @@ const Vue = window.Vue
 Vue.config.productionTip = false
 
 new Vue({
-    data: {
-        n: 0
+    // data: function () {
+    //     return {
+    //         n: 0
+    //     }
+    // },
+    // 以下是ES6写法
+    data() {
+        return {
+            n: 0
+        }
     },
     template: `
     <div class="red">
